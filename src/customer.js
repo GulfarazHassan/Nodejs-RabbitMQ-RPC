@@ -20,7 +20,7 @@ app.get("/wishlist", async (req, res) => {
             customerId: "asdase23rf43223sa"
         }
         const responseData = await RPCRequest("PRODUCT_RPC", requestPayload)
-        console.log("responseData :: ", responseData)
+        // console.log("responseData :: ", responseData)
         return res.status(200).json({ response: responseData })
     } catch (e) {
         console.log("Error :: ", e)

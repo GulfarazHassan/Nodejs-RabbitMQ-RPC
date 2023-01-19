@@ -19,7 +19,7 @@ app.get("/customer", async (req, res) => {
             customerId: "asdase23rf43223sa"
         }
         const responseData = await RPCRequest("CUSTOMER_RPC", requestPayload)
-        console.log("responseData /customer :: ", responseData)
+        // console.log("responseData /customer :: ", responseData)
         return res.status(200).json({ response: responseData })
     } catch (e) {
         console.log("Error :: ", e)
